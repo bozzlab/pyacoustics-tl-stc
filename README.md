@@ -12,7 +12,7 @@ Jason Esan Cambridge (2006). Prediction tools for airborne sound insulation- eva
 #  โมเดลสำหรับการคาดคะเน ค่าการสูญเสียพลังงานเสียงขณะส่งผ่านของผนัง กำแพง #   
 โมเดลนี้ใช้สำหรับการศึกษา วิธีการคาดคะเน ค่าการสูญเสียพลังงานเสียงขณะส่งผ่าน  
 ในโมเดลนี้จะใช้ ค่าคุณสมบัติของวัสดุ เพื่อคาดคะเน ค่าการสูญเสียพลังงานเสียงขณะส่งผ่าน  
-และประเมินด้วยมาตรฐานการป้องกันเสียง STC พร้อมทั้งแสดงข้อมูลของผลลัพธ์ในรูปกราฟและค่าข้อมูล   
+และประเมินด้วยมาตรฐานการป้องกันเสียง STC พร้อมทั้งแสดงข้อมูลของผลลัพธ์ในรูปกราฟและตาราง
 • อ้างอิงสมการและสูตรจาก เอกสารของโปรแกรม Insul  
 • อ้างอิง  
 Jason Esan Cambridge (2006). Prediction tools for airborne sound insulation- evaluation and application. Department of Civil and Environmental Engineering Division of Applied Acoustics, CHALMERS UNIVERSITY OF TECHNOLOGY, Sweden  
