@@ -1,3 +1,8 @@
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+%matplotlib inline #for juypter notebook 
+
 ############################################################
 ##### Sound Transmission Loss ##############################
 ##### Single Panel Predicetive Model #######################
