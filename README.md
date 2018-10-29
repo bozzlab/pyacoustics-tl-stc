@@ -7,7 +7,7 @@ Then evaluate by STC standard and visualization.
 • Document Reference : 
 Jason Esan Cambridge (2006). Prediction tools for airborne sound insulation- evaluation and application. Department of Civil and Environmental Engineering Division of Applied Acoustics, CHALMERS UNIVERSITY OF TECHNOLOGY, Sweden
 
-**FOR STUDY ONLY **
+**FOR STUDY ONLY**
 
 #  โมเดลสำหรับการคาดคะเน ค่าการสูญเสียพลังงานเสียงขณะส่งผ่านของผนัง กำแพง # 
 โมเดลนี้ใช้สำหรับการศึกษา วิธีการคาดคะเน ค่าการสูญเสียพลังงานเสียงขณะส่งผ่าน
