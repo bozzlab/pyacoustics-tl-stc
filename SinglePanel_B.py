@@ -2,6 +2,28 @@ import numpy as np
 import pandas as pd 
 import matplotlib.pyplot as plt 
 
+############################################################
+##### Sound Transmission Loss ##############################
+##### Single Panel Predicetive Model #######################
+############################################################
+############################################################
+##### Author : Peem Srinikorn ##############################
+##### 29 Oct 2018 ##########################################
+############################################################
+########## Reference Equation,formula from Insul ###########
+############################################################
+##########  Document Reference #############################
+############################################################
+########## Jason Esan Cambridge (2006). ####################
+## Prediction tools for airborne sound insulation- #########
+## evaluation and application. Department of Civil #########
+########### and Environmental Engineering ##################
+############ Division of Applied Acoustics,#################
+############ CHALMERS UNIVERSITY OF TECHNOLOGY, Sweden #####
+############################################################
+########## for study only ##################################
+############################################################
+
 class SinglePanel_B(): 
     
     def __init__(self,Mass,Thick,Modulus,Damp,Area): #Essential Attribute
