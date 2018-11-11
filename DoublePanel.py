@@ -45,11 +45,6 @@ class DoublePanel():
         self.c = 343 #speed of airborne sound
         self.pair = 1.18 # Airborne Sound Density
 
-    def __repr__(self): #represent variable
-        distance = self.d
-        density = self.p
-        flow_res = self.flow
-
     def freq(self):
         me = ((self.pair*(self.c**2))/self.d)*((1/self.Mass_A)+(1/self.Mass_B))
         f0 = (1/(2*np.pi))*(np.sqrt(me))
