@@ -26,15 +26,15 @@ import matplotlib.pyplot as plt
 
 class SinglePanel():
 
-    def __init__(self, Mass, Thick, Modulus, Damp, Area):  # Essential Attribute
-        self.Mass = Mass  # Mass as Kg unit
-        self.Thick = Thick / 1000  # Thickness as mm unit
-        self.Modulus = Modulus * 10 ** 9  # Young Modulus as GPa unit
-        self.Damp = Damp  # Damping ratio
-        self.Area = Area  # Area of Sample as m^2 unit
-        self.f = [50, 63, 80, 100, 125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, 1250, 1600, 2000, 2500, 3150,
-                  4000, 5000]  # 1/3 Octave freq band
-        self.c = 343  # speed of airborne sound
+    def __init__(self,Mass,Thick,Modulus,Damp,width,height): #Essential Attribute
+        self.Mass = Mass #Mass as Kg unit
+        self.Thick = Thick/1000 # Thickness as mm unit
+        self.Modulus = Modulus*10**9 #Young Modulus as GPa unit
+        self.Damp = Damp #Damping ratio
+        self.Area = width*height #Area of Sample as m^2 unit
+        self.f=[50,63,80,100,125,160,200,250,315,400,500,630,800,1000,1250,1600,2000,2500,3150,4000,5000] #1/3 Octave freq band
+        self.c = 343 #speed of airborne sound
+        self.height = height # for calculate delta Rm
 
     def Crifreq(self):  # calc Critical Frequency or Resonant frequency
         fc = ((self.c ** 2) / 6.283185) * (np.sqrt(self.Mass / (((self.Modulus) * ((self.Thick) ** 3)) / 11.988)))
@@ -158,12 +158,12 @@ class SinglePanel():
 ############################################################
 ########## for study only ##################################
 ############################################################
-    ### Attribute ##(Mass,Thick,Modulus,Damp,Area): ##
 if __name__ == '__main__':
-    Single = SinglePanel(7,10,4,0.1,6)
-    Single.plot() #plot TL/STC
-    Single.info() #read infomation as dictionary
-    Single.data() #read TL data as dictionary
+    ### Attribute ##(Mass,Thick,Modulus,Damp,Width,Height): 
+    Single = SinglePanel(7,10,4,0.1,3,4)
+    Single.plot()
+    Single.info()
+    Single.data()
 ############################################################
 ##### Sound Transmission Loss ##############################
 ##### Single Panel Predicetive Model #######################
