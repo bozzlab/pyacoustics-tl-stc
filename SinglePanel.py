@@ -158,11 +158,12 @@ class SinglePanel():
 ############################################################
 ########## for study only ##################################
 ############################################################
+    ### Attribute ##(Mass,Thick,Modulus,Damp,Area): ##
 if __name__ == '__main__':
     Single = SinglePanel(7,10,4,0.1,6)
-    Single.plot()
-    Single.info()
-    Single.data()
+    Single.plot() #plot TL/STC
+    Single.info() #read infomation as dictionary
+    Single.data() #read TL data as dictionary
 ############################################################
 ##### Sound Transmission Loss ##############################
 ##### Single Panel Predicetive Model #######################
