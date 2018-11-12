@@ -26,17 +26,15 @@ import matplotlib.pyplot as plt
 
 class SinglePanel_A(): 
     
-    def __init__(self,Mass,Thick,Modulus,Damp,Area): #Essential Attribute
-        self.Mass = Mass #Mass as Kg unit  
+    def __init__(self,Mass,Thick,Modulus,Damp,width,height): #Essential Attribute
+        self.Mass = Mass #Mass as Kg unit
         self.Thick = Thick/1000 # Thickness as mm unit
         self.Modulus = Modulus*10**9 #Young Modulus as GPa unit
         self.Damp = Damp #Damping ratio
-        self.Area = Area #Area of Sample as m^2 unit 
+        self.Area = width*height #Area of Sample as m^2 unit
         self.f=[50,63,80,100,125,160,200,250,315,400,500,630,800,1000,1250,1600,2000,2500,3150,4000,5000] #1/3 Octave freq band
-        self.c = 343 #speed of airborne sound 
-
-    def __repr__(self):
-        return self.Mass
+        self.c = 343 #speed of airborne sound
+        self.height = height # for calculate delta Rm
 
     def Crifreq(self): # calc Critical Frequency or Resonant frequency
         fc = ((self.c**2)/6.283185)*(np.sqrt(self.Mass/(((self.Modulus)*((self.Thick)**3))/11.988)))
@@ -60,7 +58,7 @@ class SinglePanel_A():
         Rlow = [-10*np.log10(np.log(kw[i]*(self.Area**0.5)))+20*np.log10(1-(omega[i]/omegaC)**2) for i in range(0,len(fLow))]
         return Rlow
     
-    def Cal(self): # Summarize formula
+    def Values(self): # Summarize formula
         TL = SinglePanel_A.Masslaw(self)
         Rlow = SinglePanel_A.FqLow(self)
         fc = SinglePanel_A.Crifreq(self)
@@ -72,5 +70,26 @@ class SinglePanel_A():
                 TL[i] = TL[i]
                 
         R_TL = [TL[i] for i in range(0,len(f)) if f[i] >= 125 and f[i] <= 4000] #slice data as STC freq range 125 Hz - 4 KHz
-        return R_TL,TL 
+        return R_TL,TL  #[0] for STC / [1] for fullrange values
     
+############################################################
+##### Sound Transmission Loss ##############################
+##### Single Panel Predicetive Model #######################
+############################################################
+############################################################
+##### Author : Peem Srinikorn ##############################
+##### 29 Oct 2018 ##########################################
+############################################################
+########## Reference Equation,formula from Insul ###########
+############################################################
+##########  Document Reference #############################
+############################################################
+########## Jason Esan Cambridge (2006). ####################
+## Prediction tools for airborne sound insulation- #########
+## evaluation and application. Department of Civil #########
+########### and Environmental Engineering ##################
+############ Division of Applied Acoustics,#################
+############ CHALMERS UNIVERSITY OF TECHNOLOGY, Sweden #####
+############################################################
+########## for study only ##################################
+############################################################
