@@ -10,7 +10,11 @@ Jason Esan Cambridge (2006). Prediction tools for airborne sound insulation- eva
 
 **Model Structure** 
 
-<img src= "https://cdn-images-1.medium.com/max/1000/1*Q9x3g-9g_U35-RKMm55tLw.png" align ="bottom" height="320" width="600" ></img>    
+<img src= "https://cdn-images-1.medium.com/max/1000/1*Q9x3g-9g_U35-RKMm55tLw.png" align ="bottom" height="320" width="600" ></img> 
+
+**Visulization**  
+
+<img src="https://cdn-images-1.medium.com/max/1000/1*8ukywsj7mOJe_n_utts_ZQ.png" align ="bottom" height="320" width="600" ></img>
 
 
 **Article (Thai Language)**  
