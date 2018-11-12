@@ -31,8 +31,7 @@ class Show():
 
     def Eval_STC(self):  # Evaluation Standard Transmission loss
         s = [[i - 16, i - 13, i - 10, i - 7, i - 4, i - 1, i, i + 1, i + 2, i + 3, i + 4, i + 4, i + 4, i + 4, i + 4,
-              i + 4] for i in
-             range(150)]  # STC Contourf = [12.45,14,15.45,20.9,22.9,24.9,26.9,28.9,31,32.9,34.8,37,38.9,40.9,17.7,20.8]
+              i + 4] for i in range(150)]  # STC Contourf 
         f = self.STC
         for x in range(0, len(s)):  # STC Contour Condition
             for y in range(0, 16):
