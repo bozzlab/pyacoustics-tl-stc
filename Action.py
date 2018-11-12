@@ -9,7 +9,6 @@ from Show import Show
 ####### Author : Peem Srinikorn ###############################################
 ###############################################################################
 ###############################################################################
-if __name__ =='__main__':
 # for SinglePanel must use .values or display output as list  #################
 # // SinglePanel_A, _B are no plot and evaluate function itself ###############
 # for DoublePanel must use .Total_Db or Total_Ab for display output as list ###
