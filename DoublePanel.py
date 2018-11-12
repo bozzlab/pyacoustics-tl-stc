@@ -26,6 +26,7 @@ import matplotlib.pyplot as plt
 ########## for study only ##################################
 ############################################################
 
+
 class DoublePanel():
     def __init__(self,Panel_A,Panel_B,d,flow,spacing): #distance
         self.d = d/1000 #distance between Panel_A and Panel_B -> unit millimetre
