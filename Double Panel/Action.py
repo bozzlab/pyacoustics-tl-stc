@@ -9,7 +9,7 @@ from Show import Show
 ####### Author : Peem Srinikorn ###############################################
 ###############################################################################
 ###############################################################################
-# for SinglePanel must use .values or display output as list  #################
+# for SinglePanel must use .values for display output as list  #################
 # // SinglePanel_A, _B are no plot and evaluate function itself ###############
 # for DoublePanel must use .Total_Db or Total_Ab for display output as list ###
 # [0] for STC 125 Hz - 4,000 Hz / [1] for fullrange values ####################
