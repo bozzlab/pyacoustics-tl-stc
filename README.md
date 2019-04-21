@@ -6,7 +6,7 @@ The model used material property to estimate the sound transmission loss. Then e
 • Document Reference :   
 Jason Esan Cambridge (2006). Prediction tools for airborne sound insulation- evaluation and application. Department of Civil and  Environmental Engineering Division of Applied Acoustics, CHALMERS UNIVERSITY OF TECHNOLOGY, Sweden  
 
-***FOR STUDY ONLY***    
+***FOR EDUCATION***    
 
 # โมเดลการคาดคะเนค่าการสูญเสียพลังงานเสียงขณะส่งผ่านผนังและกำแพง #  
 Repository นี้จัดทำเพื่อการศึกษา วิธีการคาดคะเน ค่าการสูญเสียพลังงานเสียงขณะส่งผ่านผนังและกำแพง ในรูปแบบชั้นเดียวและชั้นคู่ โดยอ้างอิงทฤษฎีการคาดคะเนจากข้อมูคุณสมบัติเฉพาะทางของวัสดุ เช่น มวล ค่าความยืดหยุ่น พื้นที่หน้าตัด เป็นต้น โมเดลนี้จะแสดงผลลัพธ์ในลักษณะของหน่วยวัดทาง Acoustics   
