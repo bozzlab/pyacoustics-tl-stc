@@ -1,8 +1,8 @@
-from DoublePanel import DoublePanel
-from SinglePanel_A import SinglePanel_A
-from SinglePanel_B import SinglePanel_B
-from SinglePanel import SinglePanel
-from Show import Show
+from doublePanel import DoublePanel
+from singlePanel_A import SinglePanel_A
+from singlePanel_B import SinglePanel_B
+#from SinglePanel import SinglePanel
+from plot import Show
 
 ###############################################################################
 ###############################################################################

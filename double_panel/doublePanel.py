@@ -1,5 +1,5 @@
-from SinglePanel_A import SinglePanel_A
-from SinglePanel_B import SinglePanel_B
+from singlePanel_A import SinglePanel_A
+from singlePanel_B import SinglePanel_B
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
