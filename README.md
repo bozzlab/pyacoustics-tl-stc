@@ -1,5 +1,64 @@
 # Predictive Model The Sound Transmission Loss (TL/STC) # 
 
+Before walkthrough, Please read **Note** before,
+
+## Get It !
+
+### Initial Project 
+```
+pipenv shell 
+pipenv install -r requirements.txt
+```
+### Testing
+```
+pytest 
+```
+
+### Example 
+#### single_panel_run.py
+```
+from model_tl_stc.single_panel import SinglePanel
+
+if __name__ == '__main__':
+    single_pn = SinglePanel(mass = 7, thick = 10, modulus = 4, damp = 0.1, width = 3, height = 4)
+    single_pn.plot()
+    data = single_pn.get_data()
+    print("Transmission Loss (TL) for each frequency : \n")
+    print(data)
+    print("\n")
+    print("Information of Panel : \n")
+    info = single_pn.get_info()
+    print(info)
+```
+
+#### double_panel_run.py
+```
+from model_tl_stc.double_panel import DoublePanel
+from model_tl_stc.single_panel import SinglePanel
+
+if __name__ == '__main__':
+    single_pn_a = SinglePanel(mass = 12, thick = 15, modulus = 2.5, damp = 0.1, width = 3, height = 3)
+    single_pn_b = SinglePanel(mass = 12, thick = 15, modulus = 2.5, damp = 0.1, width = 3, height = 3)
+    double_pn = DoublePanel(panel_a = single_pn_a, panel_b = single_pn_b, distance = 65, flow_res = 12000, spacing = 450)
+    tl = double_pn.tl_panel_with_stud_and_absorber()
+    double_pn.full_scale_plot(tl)
+    double_pn.stc_scale_plot(tl)
+    print("Transmission Loss (TL) for each frequency : \n")
+    data = double_pn.get_data(tl)
+    print(data)
+    print("\n")
+    print("Information of Panel : \n")
+    info = double_pn.get_info(tl)
+    print(info)
+    print("Display data as Pandas DataFrame")
+    print("\n")
+    print(double_pn.get_data_pd(tl))
+```
+___
+
+# Note
+
+
 **This model used for study the predicting method of sound transmission loss.**  
 The model used material property to estimate the sound transmission loss. Then evaluate by STC standard and visualization.   
 • Reference Equation,formula from **Insul Document**  
@@ -18,10 +77,6 @@ Transmission loss (TL) และทำการประเมินด้วย
 
 # Detail #
 
-**Model Structure** 
-
-<img src= "https://cdn-images-1.medium.com/max/1000/1*Q9x3g-9g_U35-RKMm55tLw.png" align ="bottom" height="320" width="600" ></img> 
-
 **Visulization**  
 
 <img src="https://cdn-images-1.medium.com/max/1000/1*8ukywsj7mOJe_n_utts_ZQ.png" align ="bottom" height="320" width="600" ></img>
@@ -34,3 +89,4 @@ Transmission loss (TL) และทำการประเมินด้วย
 <img src="https://cdn-images-1.medium.com/max/1000/1*D2U9IBPAclPUpZpH6GvBNA.jpeg" align ="bottom" height="380" width="600"></img>  
   
 ## Author : Peem Srinikorn 
+
