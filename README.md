@@ -16,7 +16,8 @@ pytest
 
 ### Example 
 #### single_panel_run.py
-```
+```python
+
 from model_tl_stc.single_panel import SinglePanel
 
 if __name__ == '__main__':
@@ -32,7 +33,7 @@ if __name__ == '__main__':
 ```
 
 #### double_panel_run.py
-```
+```python
 from model_tl_stc.double_panel import DoublePanel
 from model_tl_stc.single_panel import SinglePanel
 
