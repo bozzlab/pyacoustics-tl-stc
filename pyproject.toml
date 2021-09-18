@@ -10,6 +10,9 @@ python = " >=3.7,<3.9"
 pydantic = "^1.8.2"
 black = "^21.9b0"
 numpy = "^1.21.2"
+pyflakes = "^2.3.1"
+mypy = "^0.910"
+prospector = "^1.5.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
